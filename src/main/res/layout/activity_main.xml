@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           style="@style/ActivityTItle"
+           android:text="맛집 찾아줘"
+           />
+
+       <TextView
+           android:id="@+id/userAddress"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="userAddress"
+           android:textSize="15dp"
+           android:textAlignment="center"/>
+       <TextView
+           android:id="@+id/longLat"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Long_Lat"
+           android:textSize="15dp"
+           android:textAlignment="center"/>
+       <TextView
+           android:id="@+id/areaName"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="area"
+           android:textSize="15dp"
+           android:textAlignment="center"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <Button
+               android:id="@+id/category1"
+               style="@style/CategoryBox"
+               android:layout_above="@+id/category3"
+               android:layout_toLeftOf="@+id/centerAlignBox"
+               android:text="한식"/>
+           <TextView
+               android:id="@+id/category2"
+               style="@style/CategoryBox"
+               android:layout_above="@+id/category3"
+               android:layout_toRightOf="@+id/centerAlignBox"
+               android:text="일식"/>
+           <TextView
+               android:id="@+id/category3"
+               style="@style/CategoryBox"
+               android:layout_above="@+id/centerAlignBox"
+               android:layout_toLeftOf="@+id/centerAlignBox"
+               android:text="중식"/>
+           <TextView
+               android:id="@+id/category4"
+               style="@style/CategoryBox"
+               android:layout_below="@+id/category1"
+               android:layout_toRightOf="@+id/centerAlignBox"
+               android:text="양식"/>
+           <TextView
+               android:id="@+id/category5"
+               style="@style/CategoryBox"
+               android:layout_below="@+id/category4"
+               android:layout_toLeftOf="@+id/centerAlignBox"
+               android:text="\??"/>
+           <TextView
+               android:id="@+id/category6"
+               style="@style/CategoryBox"
+               android:layout_below="@+id/category4"
+               android:layout_toRightOf="@+id/centerAlignBox"
+               android:text="\??"/>
+
+           <TextView
+               android:id="@+id/centerAlignBox"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"/>
+       </RelativeLayout>
+   </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:alpha="0.8">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

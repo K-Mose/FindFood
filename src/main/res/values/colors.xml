@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundColor">#EFEFEF</color>
+
+    <color name="category1">#00BCD4</color>
+    <color name="category2">#F1E25B</color>
+    <color name="category3">#584B6D</color>
+    <color name="category4">#009688</color>
+    <color name="category5">#FF0000</color>
+    <color name="category6">#FF5722</color>
+</resources>
